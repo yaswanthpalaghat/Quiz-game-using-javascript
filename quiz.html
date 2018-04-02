@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/stylesheet.css" type="text/css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<title>Objects and Arrays Quiz</title>
+</head>
+
+<body class="myBody">
+    <div class="container myContainer"> <!-- open bootstrap container -->
+        <div class="row">
+            <div class="jumbotron myTitle"><h1>Play and create Quiz</h1></div>
+            <div><h2>Welcome to my quiz!</h2></div>
+        </div> <!-- close row -->
+        
+        <br>
+        <div class="row">
+            <div id="question"></div>
+            <br>
+        </div> <!-- close row -->
+        
+        <div class="row">
+            <div class="col-sm-1">
+            </div> <!-- close column -->
+            <div class="col-sm-11">
+                <form id = "answers">
+                   <input type="radio" name="quizQuestions" onclick="answerQuestion(this.value)" value="answerOne"><div id="optionOne"></div>
+                    <br>
+                    <input type="radio" name="quizQuestions" onclick="answerQuestion(this.value)" value="answerTwo"><div id="optionTwo"></div>
+                    <br>
+                    <input  type="radio" name="quizQuestions" onclick="answerQuestion(this.value)" value="answerThree"><div id="optionThree"></div>
+                </form>
+            </div> <!-- close column -->
+        </div> <!-- close row -->
+    
+        <br>
+    <div class="row">
+        <div><button class="myButton" id="submit">Submit</button><button class="myButton" id="openQuestionInput">Add more questions</button><button class="myButton" id="restartQuizBut">Restart the Quiz</button></div>
+    </div> <!-- close row -->
+    <br>
+    
+    <div class="row">
+        <div id="output" class="subHeading"></div>
+    </div> <!-- close row -->
+    <br>
+        
+    <div class="row" id="newQestionForm">
+         <div class="col-sm-1">
+            </div> <!-- close column -->
+            <div class="col-sm-11">
+                <form id = "newQuestFormReset">
+                    <div>Input the new question and the options you wish them to pick. Also make sure that you select the radio button that corisponds with the correct answer.</div>
+                    <br>
+                    <textarea class="myInput" id="newQestion" cols="40" rows="1"></textarea>
+                    <br>
+                    <br>
+                    <input type="radio" name="newQuestions" onclick="subQuestAnswer(this.value)" value="answerOne"><input class="myInput" type="text" id="newOptionOne">
+                    <br>
+                    <input type="radio" name="newQuestions" onclick="subQuestAnswer(this.value)" value="answerTwo"><input class="myInput" type="text" id="newOptionTwo">
+                    <br>
+                    <input type="radio" name="newQuestions" onclick="subQuestAnswer(this.value)" value="answerThree"><input class="myInput" type="text" id="newOptionThree">
+                </form>
+                <br>
+                <div><button class="myButton" id="submitQuestion">Submit Question</button></div>
+            </div> <!-- close column -->   
+    </div> <!-- close row -->
+    <br>
+        
+    <script src="quiz.js"></script>
+    </div> <!-- close bootstrap container -->
+</body>
+</html>

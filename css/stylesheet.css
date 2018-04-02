@@ -1,0 +1,41 @@
+
+.myBody {
+    background-color:green;
+    opacity: 0.85;
+}
+h2 {
+	background-color:blue;
+}
+#question {
+	color:black;
+}
+.container.myContainer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 'large';
+    color: azure;
+}
+
+.jumbotron.myTitle {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: azure;
+    opacity: 1;
+    background-color:#819b9a;
+    opacity: 0.85;
+}
+
+.myButton {
+    color: black;
+}
+
+.myInput {
+    color: black;
+}
+
+.col-sm-8.leftAlign {
+    text-align: left;
+}
+
+.subHeading {
+    font-size: x-large;
+}
